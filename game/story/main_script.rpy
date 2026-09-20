@@ -14,6 +14,13 @@ label start:
     # Chapters
     call start_chapter_1
     elowyn "Bye Chapter 1!"
+    elowyn "lorem ipsum dolor sit amet consectetur adipiscing elit dignissimos velit in quas quo ipsum et proident et duis quis quod optio eiusmod non culpa cumque culpa ut est quos dolores ut facilis deleniti maxime non excepturi culpa"
+
+    menu:
+        "Jump to Chapter 4":
+            call start_chapter_4
+        "Continue":
+            pass
 
     call start_chapter_2
     elowyn "Bye Chapter 2!"
