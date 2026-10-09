@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 ##CHANGE TITLE LATER
-define config.name = _("Title")
+define config.name = _("")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -109,6 +109,7 @@ define config.end_game_transition = None
 ## "window hide", and "window auto" statements.
 
 define config.window = "auto"
+define config.menu_include_disabled = True
 
 
 ## Transitions used to show and hide the dialogue window
@@ -122,7 +123,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 20
+default preferences.text_cps = 30
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0

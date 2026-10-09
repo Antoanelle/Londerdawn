@@ -5,7 +5,7 @@
         "**/*.rpymc": true,
         "**/cache/": true
     },
-    "renpyWarp.sdkPath": "c:\\Users\\aniel\\Downloads\\renpy-8.5.3-sdk",
+    "renpyWarp.sdkPath": "c:/Users/aniel/Downloads/renpy-8.5.3-sdk",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {

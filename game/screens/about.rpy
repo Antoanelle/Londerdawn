@@ -9,17 +9,13 @@ screen about():
 
     tag menu
 
-    ## This use statement includes the game_menu screen inside this one. The
-    ## vbox child is then included inside the viewport inside the game_menu
-    ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu(_("About"), scroll="viewport", title_image="images/about_title.png"):
 
         style_prefix "about"
 
         vbox:
 
             label "[config.name!t]"
-            text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
@@ -30,7 +26,8 @@ screen about():
 
 style about_label is gui_label
 style about_label_text is gui_label_text
-style about_text is gui_text
+style about_text:
+    color gui.about_text_color
 
 style about_label_text:
     size gui.label_text_size

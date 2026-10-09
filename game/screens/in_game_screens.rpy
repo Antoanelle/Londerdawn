@@ -22,11 +22,30 @@ screen say(who, what):
     window:
         id "window"
 
+        background(
+            Image("images/dialogue/textbox_light_blue.png", xalign=0.5, ypos=0) if who == "Elowyn"
+            else Image("images/dialogue/textbox_light_yellow.png", xalign=0.5, ypos=0) if who in("Elliot", "???") 
+            else Image("images/dialogue/textbox_light_red.png", xalign=0.5, ypos=0) if who == "Ms. Valentine"
+            else Image("images/dialogue/textbox_light_green.png", xalign=0.5, ypos=0) if who in("Jasper", "????")
+            else Image("images/dialogue/textbox_light_orange.png", xalign=0.5, ypos=0) if who == "Ms. Crumblepuff"
+            else Image("images/dialogue/textbox_light_purple.png", xalign=0.5, ypos=0) if who == "Paige"
+            else Image("images/dialogue/textbox_light_blue.png", xalign=0.5, ypos=0)
+            ) 
+            
         if who is not None:
 
             window:
                 id "namebox"
                 style "namebox"
+                background (
+                    Frame("images/dialogue/namebox_blue.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Elowyn"
+                    else Frame("images/dialogue/namebox_yellow.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who in("Elliot", "???") 
+                    else Frame("images/dialogue/namebox_red.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Ms. Valentine"
+                    else Frame("images/dialogue/namebox_green.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who in("Jasper", "????")
+                    else Frame("images/dialogue/namebox_orange.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Ms. Crumblepuff"
+                    else Frame("images/dialogue/namebox_purple.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Paige"
+                    else Frame("images/dialogue/namebox_blue.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+                )  
                 text who id "who"
 
         text what id "what"
@@ -57,8 +76,6 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
-
 style namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
@@ -66,11 +83,12 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    #background Frame("images/dialogue/namebox_blue.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
-    properties gui.text_properties("name", accent=True)
+    properties gui.text_properties("name")
+    color "#ffffff"
     xalign gui.name_xalign
     yalign 0.5
 
@@ -125,31 +143,39 @@ style input:
 ## and action fields.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
-
 screen choice(items):
     style_prefix "choice"
-
+   
     vbox:
+        at choice_fade_in
         for i in items:
             textbutton i.caption action i.action
-
 
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
-    ypos 405
+    xpos 1300
+    ypos 580
     yanchor 0.5
-
     spacing gui.choice_spacing
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    background "images/choice_light_idle.png"
+    hover_background "images/choice_light_hover.png"
+    insensitive_background "images/choice_light_disabled.png"
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    xmaximum gui.choice_button_width
+    xpos 150
+    yalign 0.5
+
+transform choice_fade_in:
+    alpha 0.0
+    linear 0.1 alpha 1.0
 
 
 ## Quick Menu screen ###########################################################
@@ -158,24 +184,60 @@ style choice_button_text is default:
 ## menus.
 
 screen quick_menu():
+    default auto_clicked = False
 
     ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
-            style "quick_menu"
+        fixed:
+            #style_prefix "quick"
+            #style "quick_menu"
+            xfill True
+            yfill True
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            vbox:
+                xpos 380
+                ypos 825
+                spacing 10
+
+                imagebutton:
+                    idle "images/gui/btn_light_history_idle.png"
+                    hover "images/gui/btn_light_history_hover.png"
+                    action ShowMenu('history')
+
+                imagebutton:
+                    idle "images/gui/btn_light_save_idle.png"
+                    hover "images/gui/btn_light_save_hover.png"
+                    action ShowMenu('save')
+
+                imagebutton:
+                    idle "images/gui/btn_light_options_idle.png"
+                    hover "images/gui/btn_light_options_hover.png"
+                    action ShowMenu('preferences')
+
+            vbox:
+                xpos 1470
+                ypos 825
+                spacing 10
+
+                imagebutton:
+                    idle "images/gui/btn_light_skip_idle.png"
+                    hover "images/gui/btn_light_skip_hover.png"
+                    action Skip() alternate Skip(fast=True, confirm=True)
+
+                imagebutton:
+                    idle "images/gui/btn_light_continue_idle.png"
+                    hover "images/gui/btn_light_continue_hover.png"
+                    selected_idle "images/gui/btn_light_continue_hover.png"
+                    selected_hover "images/gui/btn_light_continue_hover.png"
+                    action Preference("auto-forward", "toggle")
+
+                imagebutton:
+                    idle "images/gui/btn_light_load_idle.png"
+                    hover "images/gui/btn_light_load_hover.png"
+                    action ShowMenu("load")
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
