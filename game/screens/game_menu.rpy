@@ -7,23 +7,21 @@
 ## This screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
 
-screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
+screen game_menu(title, scroll=None, yinitial=0.0, spacing=0, title_image=None, show_navigation=True):
 
     style_prefix "game_menu"
-
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+    add gui.game_menu_background:
+        xysize (config.screen_width, config.screen_height)
 
     frame:
         style "game_menu_outer_frame"
 
         hbox:
 
-            ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
+            if show_navigation:
+                ## Reserve space for the navigation section.
+                frame:
+                    style "game_menu_navigation_frame"
 
             frame:
                 style "game_menu_content_frame"
@@ -65,14 +63,23 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
                     transclude
 
-    use navigation
+    if show_navigation:
+        use navigation
 
-    textbutton _("Return"):
-        style "return_button"
-
+    imagebutton:
+        focus_mask True
+        xalign 0.0
+        ypos 850
+        xoffset 0
+        idle im.Scale("images/return_idle.png", 400, 300)
+        hover im.Scale("images/return_hover.png", 400, 300)
         action Return()
 
-    label title
+    if title_image:
+        add title_image:
+            xpos -50
+    else:
+        label title
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -92,10 +99,9 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
+    background None
     bottom_padding 45
     top_padding 180
-
-    background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
@@ -123,8 +129,3 @@ style game_menu_label_text:
     size 75
     color gui.accent_color
     yalign 0.5
-
-style return_button:
-    xpos gui.navigation_xpos
-    yalign 1.0
-    yoffset -45

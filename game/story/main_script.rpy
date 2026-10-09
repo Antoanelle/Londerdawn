@@ -1,41 +1,74 @@
-﻿# The main script of the story. Will call on events from different files
-# The game starts here.
+﻿# VARIABLES
+default computer_clicked = False
+default file_clicked = False
 
 label start:
 
-    # Show a background. This uses a placeholder by default;
-    scene bg room
+    ##BEGINNING
+    ##CHARACTERS - Elowyn, Boss
+    ##BACKGROUNDS - Small office
 
-    # This shows a character sprite. A placeholder is used.
-    show elowyn happy
+    scene small_desk with Dissolve(1.5)
 
-    elowyn "Hello World!"
+    show elowyn
 
-    # Chapters
-    call start_chapter_1
-    elowyn "Bye Chapter 1!"
-    elowyn "lorem ipsum dolor sit amet consectetur adipiscing elit dignissimos velit in quas quo ipsum et proident et duis quis quod optio eiusmod non culpa cumque culpa ut est quos dolores ut facilis deleniti maxime non excepturi culpa"
+    #Input paper sound effects, door knocking and entering
+    ###NARATOR
+    "Elowyn sits at her new desk, sorting through paperwork and files. Her boss steps out of his office with a file in his hand."
 
-    menu:
-        "Jump to Chapter 4":
-            call start_chapter_4
-        "Continue":
-            pass
+    boss "Look alive, Elaine! I have a case for you."
+    elowyn "{i}He still doesn’t know my name?{/i}"
+    elowyn "Another missing cat, Sir?"
 
-    call start_chapter_2
-    elowyn "Bye Chapter 2!"
+    #Input something hitting the desk and paper sound effects
+    ###NARATOR
+    "He drops the folder onto her desk. Inside is a photograph of a small, unfamiliar town."
 
-    call start_chapter_3
-    elowyn "Bye Chapter 3!"
+    boss "It’s your lucky day. Residents of Londerdawn have been complaining about this bizarre incident. The mayor has been pressuring us to solve this case. Even though it’s classified as low priority, we pushed it earlier in the work order."
 
-    call start_chapter_4
-    elowyn "Bye Chapter 4!"
+    ###NARATOR
+    "Boss seems to recall a bad memory. He looks like he just bit into a lemon."
 
-    call start_chapter_5
-    elowyn "Bye Chapter 5!"
+    boss "That old bat is going to rush you for sure. Just try to get it done fast. Pin it on the mailman or something."
+    elowyn "Um… Yeah sure, I’ll get right on that sir."
+    boss "{i}Sarcasm drips from his words.{/i}"
+    boss "Great, I knew I could count on your help. Good luck with that!"
 
-    call start_chapter_6
-    elowyn "Bye Chapter 6!"
+    elowyn "Right…"
+    window show
+    while not computer_clicked or not file_clicked:
+        menu:
+            "{i}What should I do next?{/i}"
+            
+            "Search on computer" if not computer_clicked:
+                call computer
+                $ computer_clicked = True
+            "Investigate file" if not file_clicked:
+                call files
+                $ file_clicked = True
+    window auto
 
-    # This ends the game.
-    return
+    #Input computer typing sounds
+    #Extra: Have the user input into the computer the town, if the user types right the game continues
+
+    #When the user clicks on both items, the game moves on
+    elowyn "{i}What am I getting myself into…{/i}"
+
+    jump day_1
+
+
+###CHOICES
+label computer:
+    scene computer_screen
+    ##NARATOR
+    "He leaves abruptly. She turns to her computer and looks up Londerdawn"
+
+    elowyn "{i}Ugh, what a mouthful…Hold on. I’m not getting any results! Is this a prank or something?{/i}"
+return
+
+
+label files:
+    ###NARATOR
+    "Elowyn opens the file and finds nothing but an address scrawled across the back of a receipt."
+
+return
