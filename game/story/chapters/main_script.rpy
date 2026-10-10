@@ -3,7 +3,12 @@ default computer_clicked = False
 default file_clicked = False
 
 label start:
+    scene work_in_progress
+    "Hi! Our game is a work-in-progess, so check back another time :)"
+return
 
+
+label real_one:
     ##BEGINNING
     ##CHARACTERS - Elowyn, Boss
     ##BACKGROUNDS - Small office
