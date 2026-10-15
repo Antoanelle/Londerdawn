@@ -7,7 +7,9 @@
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
+
     tag menu
+    on "show" action Play("music", "audio/bgs/main_menu_town_bg.mp3")
 
     add gui.main_menu_background
     add "main_menu_title_animated":
