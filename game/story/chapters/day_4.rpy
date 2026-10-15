@@ -11,55 +11,203 @@ label day_4:
     ##BACKGROUNDS - Sleeping Quarters, Bakery
 
     ##NARATOR
+    scene sleeping quarters with fade
+    pause 2.0
+    show elowyn analyzing at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+    pause 2.0
+    show elowyn neutral at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
     "When Elowyn woke up, she momentarily thought Paige might have been in her room. The strong smell of smoke wafted in, and it took another five minutes for her to realize it wasn’t coming from her room, but outside." 
     "She stumbles over to the window and spots smoke billowing from a certain building."
 
+    show elowyn shocked at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 0.5
     elowyn "The bakery!?!? That’s the one good place here!!!"
 
     ##NARATOR
+    scene town with fade
+    play sound "audio/bgs/bakery_fire_bg.mp3"
+    show crumblepuff at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "Ms. Crumblepuff stands outside, flitting around her burning establishment as she chucks buckets of water at the building futilely."
 
+    show elowyn shocked at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elowyn "Ms. Crumblepuff? What’s going on? Are you alright?"
     crumblepuff "My cakes! My ovens! Heaven’s sake, my clocks!!! I only stepped out for minute, and– and–"
+    show elowyn thinking at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elowyn "Is anyone still inside?"
     crumblepuff "Yes! My pastries, the poor dears!!"
+    show elowyn shocked at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elowyn "{i}Let’s just handle the fire first…{/i}"
 
     ##NARATOR
     "After Elowyn and several other townsfolk band together, they are able to tame the flames. However, they were unable to save the bakery from turning into a charred mess." 
+    show elowyn neutral at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+        ease 3.0 xalign 2.0
     "After the heat died down enough, Elowyn made her way inside to investigate."
+    play sound "audio/bgs/suspenseful_bg.mp3"
+    scene bakery with fade
 
+    show elowyn thinking at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     elowyn "Not much to see here except for ash…honestly, how miserable do you have to be to burn down the bakery of all places?"
 
     ##NARATOR
+    show elowyn neutral at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "She rummages around for a bit, before she finds something on the ground, miraculously only half burnt. A small, red button shaped like a heart."
 
+    show elowyn thinking at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     elowyn "Hang on. This looks like it belongs to…well, the mayor." 
 
     ##NARATOR
+    scene town with fade
+    show crumblepuff at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+    show jasper happy at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset -200
+    show paige neutral at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 200
+    show elowyn neutral at sprite_size_four:
+        xalign 1.5
+        yalign 1.0
+        yoffset 100
+        xoffset 300
+        ease 3.0 xalign 1.0
     "The crowd begins to thicken in front of the bakery. Elowyn straightens up to see the townsfolk already pointing fingers."
 
+    show jasper happy at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     jasper "This is pretty eventful for a small town like ours. Hey, you didn’t burn down Crumblepuff’s place because she ratted you out, did you?"
+    show paige surprised at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     paige "Crumblepuff’s statement was false, as far as I’m concerned. You sure YOU didn’t do it to divert the town’s attention from the kitty fiasco?"
+    show jasper confused at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     jasper "I respect the cats. I would never do that, meow."
+    show paige annoyed at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     paige "There he goes again…you’re not cute enough to get away with that."
     crumblepuff "Oh, don’t fight! First my bakery, now your friendship?"
+    show jasper pleased at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "Paige & Jasper" "Shut up."
+    show elowyn analyzing at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
     elowyn "It’s about time the mayor gets here, isn’t it? This is the biggest thing to happen in town all week. You’d think she’d be eager to take my head off."
 
     ##NARATOR
+    show jasper pleased at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        linear 1.0 alpha 0.0
+    show paige annoyed at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        linear 1.0 alpha 0.0
+    show crumblepuff at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+        linear 1.0 alpha 0.0
+    show elliot neutral at sprite_size_four:
+        xalign -2.5
+        yalign 1.0
+        yoffset 100
+        ease 0.5 xalign 0.0
     "The person who jogs over is shockingly not the mayor, but instead Elliot. A figure who Elowyn had admittedly not seen in a hot minute, probably due to all the homework he incurred." 
     "He runs over with a bucket that is very much empty."
 
+    show elliot shocked at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elliot "Detective! I came as soon as I heard! Oh, what a catastrophe, a catastrophe indeed! Is anyone hurt?"
+    show elowyn thinking at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
     elowyn "Thankfully not. Where were you? And the mayor?"
+    show elliot sad at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elliot "Town hall, of course. Waiting for the mayor before I left, but she hadn’t arrived yet. Frankly, I’m worried about her."
     elowyn "You’re sure she’s not here?"
+    show elliot neutral at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     elliot "Very much so. Well, if it’s handled I suppose I’ll be back to the hall, then. I still have duties to fulfill, y’know."
 
     ##NARATOR
+    show elliot angry at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+    pause 0.2
+    show elliot neutral at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+        ease 0.5 xalign -1.5
     "He shoots a pointed look towards Elowyn and trudges off before she can get a word in. The townsfolk remain tense, voices overlapping as fingers are pointed. Elowyn rubs her temples."
 
+    show elowyn analyzing at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
     elowyn "Let me just go back to the car."
 
 
@@ -69,13 +217,28 @@ label day_4:
     ##BACKGROUNDS - Car
 
     ##NARATOR
+    play sound "audio/bgs/office_car_bg.mp3"
+    scene car with fade
+    show elowyn thinking at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "Inside her car, Elowyn racks her brain."
 
+    show elowyn analyzing at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     elowyn "Four cases in a row…there had to be something wrong. A connection."
 
+    show elowyn thinking at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     window show
     while not case_1_picked or not case_2_picked or not case_3_picked or not case_4_picked:
         menu:
+            
             "{i}I should think back about the previous cases{/i}"
             "Day 1. Clock hands" if not case_1_picked:
                 call case_1
@@ -98,15 +261,31 @@ label day_4:
     elowyn "I guess I should try calling her, then…"
 
     ##NARATOR
+    show elowyn analyzing at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "{i}Elowyn rings Valentine, but the woman does not pick up.{/i}" 
     "{i}Instead, Elowyn receives a text: I am currently out of town to handle urgent matters. I will be back tomorrow. Please message me if it is important.{/i}"
 
+    show elowyn thinking at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     elowyn "Hang on…she’s out of town? But Elliot said he didn’t know where she went, and it was her button that I found in the bakery!"
     elowyn "I’ll brief her about what happened. There’s not much more I can do until I can really speak to her anyway. There’s something here, I can feel it."
 
     ##NARATOR
+    show elowyn analyzing at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     "She rubs her eyes, shoulders sagging. Exhaustion tugs at her body from all directions."
 
+    show elowyn neutral at sprite_size:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     elowyn "I’ll sleep on it. Tomorrow’s the last day. I can’t mess this up!"
 
     "Fin."
