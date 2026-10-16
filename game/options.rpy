@@ -30,8 +30,13 @@ define gui.show_name = True
 
 define gui.about = _p("""
 
-Place team information later
+Antoanelle Darko - Main Programmer
 
+Mridhini Udhayakumar - Character Artist
+
+Carmen Capote - Background Artist
+
+Lasya Raju - Writer
 """)
 
 
