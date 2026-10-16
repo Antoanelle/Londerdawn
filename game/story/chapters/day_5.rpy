@@ -7,6 +7,7 @@ label day_5:
 ##SCENE ONE
 ##CHARACTERS - Elowyn, Victoria, Elliot
 ##BACKGROUNDS - City Hall
+    stop music
     scene bg day 5 with Dissolve(2.0)
 
     play sound "audio/bgs/office_car_bg.mp3"

@@ -8,7 +8,7 @@ label day_2:
     ##SCENE ONE
     ##CHARACTERS - Elowyn, Elliot
     ##BACKGROUNDS - Sleeping quarters
-
+    stop music
     scene bg day 2 with Dissolve(2.0)
     pause 2.0
     ##NARATOR 

@@ -3,7 +3,7 @@ label day_1:
     ##SCENE ONE
     ##CHARACTERS - Elowyn, Elliot
     ##BACKGROUNDS - Car, Forest
-
+    stop music
     scene bg day 1 with Dissolve(2.0)
     pause 2.0
     ##NARATOR

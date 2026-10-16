@@ -3,7 +3,7 @@ label day_3:
     ##SCENE ONE
     ##CHARACTERS - Elowyn, Jasper
     ##BACKGROUNDS - Town, Forest
-
+    stop music
     scene bg day 3 with Dissolve(2.0)
     ##NARATOR
     play sound "audio/bgs/main_menu_town_bg.mp3"

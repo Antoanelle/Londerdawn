@@ -9,6 +9,7 @@ label day_4:
     ##SCENE ONE
     ##CHARACTERS - Elowyn, Ms. Crumblepuff, Paige, Jasper, Elliot
     ##BACKGROUNDS - Sleeping Quarters, Bakery
+    stop music
     scene bg day 4 with Dissolve(2.0)
 
     ##NARATOR
