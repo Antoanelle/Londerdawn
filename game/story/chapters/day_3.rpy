@@ -67,12 +67,16 @@ label day_3:
     elowyn "…I suppose I should handle this before the mayor finds out. I have an idea of who might know something about this anyway."
 
     ##NARATOR
+    "With this in mind, Elowyn turns the opposite way and makes her way over to Jasper’s place on the outskirts of town. A quaint place, with its door currently scratched up."
     show elowyn neutral at sprite_size:
         xalign 0.5
         yalign 1.0
         yoffset 100
         ease 3.0 xalign 2.5
-    "With this in mind, Elowyn turns the opposite way and makes her way over to Jasper’s place on the outskirts of town. A quaint place, with its door currently scratched up."
+    pause(3.0)
+    hide elowyn
+    show bg forest with Dissolve(2.0)
+    play music "audio/bgs/forest_bg.mp3"
     show elowyn neutral at sprite_size:
         xalign 2.0
         yalign 1.0
@@ -289,7 +293,8 @@ label day_3:
     pause 1.0
 
     ##NARATOR
-    scene forest with fade
+    play music "audio/bgs/forest_bg.mp3"
+    scene bg forest with fade
     pause 2.0
     show elowyn neutral at sprite_size_four:
         xalign -0.5
@@ -412,6 +417,7 @@ label day_3:
         yoffset 100
         linear 3.0 alpha 0.0
     "Elowyn takes off running. She doesn’t stop until she gets to her car, where she slumps down inside."
+    pause 2.0
 
     scene bg car with fade
     play sound "audio/bgs/office_car_bg.mp3"
@@ -435,5 +441,6 @@ label day_3:
     elowyn "Crap."
 
     "Fin."
+    pause 2.0
 
 jump day_4

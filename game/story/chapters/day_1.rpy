@@ -5,7 +5,7 @@ label day_1:
     ##BACKGROUNDS - Car, Forest
 
     ##NARATOR
-    play music "audio/bgs/office_car_bg.mp3"
+    play music "audio/bgs/office_car_bg.mp3" 
     scene bg car with Dissolve(2.0)
     "Elowyn has never had good luck, and today is no exception."
     "She finds herself on a foggy morning, stranded in the middle of nowhere with no signal and no sign of civilization."
@@ -21,7 +21,7 @@ label day_1:
     ###NARATOR
     pause 1.0
     play music "audio/bgs/forest_bg.mp3"
-    scene forest with fade
+    scene bg forest with fade
     show elowyn neutral at sprite_size:
         xalign 0.0
         yalign 1.0
@@ -120,7 +120,7 @@ label day_1:
     ##BACKGROUND - Forest
 
     ###NARATOR
-    scene forest
+    scene bg forest with Dissole(2.0)
     "It seems like out of nowhere, the town’s entrance materializes right before their eyes amidst the fog."
 
     play sound "audio/sfx/leaves_moving_sfx.mp3" loop

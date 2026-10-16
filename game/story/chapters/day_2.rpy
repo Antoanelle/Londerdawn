@@ -297,6 +297,7 @@ label day_2:
     "This would be the last of this terrible town…right? Right???"
 
     "Fin."
+    pause 2.0
 
     jump day_3   
 
@@ -386,8 +387,8 @@ label car_scene:
     elowyn "{i}I just need to get away from all of this for a bit. Some time with my baby should fix this.{/i}"
 
     ##NARATOR
-    play music "audio/bg/forest_bg.mp3"
-    scene forest with fade
+    play music "audio/bgs/forest_bg.mp3"
+    scene bg forest with fade
     pause 2.0
     play sound "audio/sfx/leaves_moving_sfx.mp3"
     show elowyn neutral at sprite_size:
