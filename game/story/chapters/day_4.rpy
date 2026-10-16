@@ -104,7 +104,7 @@ label day_4:
     hide crumblepuff with Dissolve(3.0)
     "After the heat died down enough, Elowyn made her way inside to investigate."
     play sound "audio/bgs/suspenseful_bg.mp3"
-    scene bakery with fade
+    scene bg bakery burnt with fade
 
     show elowyn thinking at sprite_size_four:
         xalign 0.5

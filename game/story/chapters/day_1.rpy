@@ -255,7 +255,7 @@ label day_1:
     "???" "Just around the corner!"
 
     play music "audio/bgs/bakery_bg.mp3"
-    scene bakery with fade
+    scene bg bakery with Dissolve(2.0)
     ###NARATOR
     show elowyn neutral at sprite_size_four:
         xalign -0.5
@@ -503,6 +503,7 @@ label day_1:
             call confused_option
     window auto
     play music "audio/bgs/bakery_bg.mp3"
+
     show elowyn neutral at sprite_size_four:
         xalign 0.0
         yalign 1.0

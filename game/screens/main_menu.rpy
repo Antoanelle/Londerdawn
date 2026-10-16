@@ -15,6 +15,11 @@ screen main_menu():
     add "main_menu_title_animated":
         xalign 0.0
         zoom 1.5
+
+    add "cover_image":
+        zoom 0.5
+        xalign 1.0
+        yalign 1.0
         
     
     ## The use statement includes another screen inside this one.
@@ -75,4 +80,13 @@ image main_menu_title_animated:
     "images/start_screen/game_title.png"
     ease 0.8 ypos 175
     ease 0.8 ypos 200
+    repeat
+
+image cover_image:
+    "images/start_screen/cover_image.png"
+    ypos 500
+    ease 0.8 ypos 800
+    pause 0.2
+    ease 0.8 ypos 1000
+    pause 0.2
     repeat

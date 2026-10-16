@@ -269,8 +269,11 @@ image bg car = "images/backgrounds/car_resized.png"
 image bg city hall = "images/backgrounds/city_hall_resized.png"
 image bg library = "images/backgrounds/library_resized.png"
 image bg forest = "images/backgrounds/forest.png"
+image bg bakery = "images/backgrounds/bakery.png"
+image bg bakery second = "images/backgrounds/bakery_second.png"
+image bg bakery burnt = "images/backgrounds/bakery_burnt.png"
 
 
 ##ITEMS
 image newspaper = "images/bad_ending_newspaper.png"
-    
+image cover image = "images/start_screen/cover image.png"

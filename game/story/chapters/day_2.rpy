@@ -86,11 +86,12 @@ label day_2:
         yoffset 100
         linear 2.0 alpha 1.0
     pause 3.0
-    show victoria angry at sprite_size_four:
+    show victoria neutral at sprite_size_four:
         xalign 0.0
         yalign 1.0
         yoffset 100
-    victoria "I CANNOT BELIEVE THIS! How could this have happened? Why is everything going wrong?! Who is out to get me? My life as mayor is oooovvvveeeerrrr {i}She dramatically slumps in her chair{/I}"
+    victoria "Liddell, where were you! At this rate the files are halfway out the city already!"
+    
     show elowyn smile at sprite_size_four:
         xalign 0.5
         yalign 1.0
@@ -310,7 +311,7 @@ label bakery_scene:
     elowyn "{i}I’m too hungry to think right now. Maybe I can ask the baker some questions while I’m at it.{/i}"
 
     play music "audio/bgs/bakery_bg.mp3"
-    scene bakery with fade
+    scene bg bakery second with fade
     ##NARATOR
     show elowyn neutral at sprite_size:
         xalign 1.5
