@@ -617,7 +617,7 @@ label day_1:
     hide victoria
     hide elowyn
 
-    scene bg town with dissolve(2.0)
+    scene bg town with Dissolve(2.0)
     show elliot neutral at sprite_size:
         xalign 0.0
         yalign 1.0
