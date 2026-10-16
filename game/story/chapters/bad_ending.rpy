@@ -1,6 +1,6 @@
 label bad_ending:
-    play sound "audio/bgs/office_car_bg.mp3"
-    scene small office with fade
+    play sound "audio/bgs/office_car_bg.mp3" loop
+    scene bg office_blurred with fade
 
     show elowyn neutral at sprite_size:
         xalign 0.5
@@ -18,12 +18,17 @@ label bad_ending:
         xalign 0.5
         yalign 1.0
         yoffset 100
+    show newspaper at sprite_size:
+        alpha 0.0
+        yalign 0.5
+        linear 1.0 alpha 1.0
     "The new mayor? Elliot, of all people. It was a miracle he was able to handle it, but Elowyn supposed he was the natural second option after Victoria herself."
 
     show elowyn analyzing at sprite_size:
         xalign 0.5
         yalign 1.0
         yoffset 100
+    hide newspaper with Dissolve(2.0)
     "Elowyn finally went home, but she couldn’t shake the nagging feeling that something was wrong."
 
     "Had she really solved the case?"
@@ -35,5 +40,6 @@ label bad_ending:
     "She would never know."
 
     "Fin."
+    pause 2.0
 
 return

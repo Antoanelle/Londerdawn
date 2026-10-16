@@ -6,7 +6,7 @@ label day_1:
 
     ##NARATOR
     play music "audio/bgs/office_car_bg.mp3"
-    scene car
+    scene bg car with Dissolve(2.0)
     "Elowyn has never had good luck, and today is no exception."
     "She finds herself on a foggy morning, stranded in the middle of nowhere with no signal and no sign of civilization."
     show elowyn thinking at sprite_size:
@@ -288,6 +288,7 @@ label day_1:
         xalign 1.5
         yalign 1.0
         yoffset 100
+        xoffset -200
         ease 3.0 xalign 1.0
     show elowyn neutral at sprite_size_four:
         xalign 0.0
@@ -309,7 +310,8 @@ label day_1:
     show victoria angry at sprite_size_four:
         xalign 1.0
         yalign 1.0
-        yoffset 100
+        yoffset 50
+        xoffset -200
     victoria "Guilty, you say! I thought your job was to catch criminals, not be one!"
     show elowyn shocked at sprite_size_four:
         xalign 0.0
@@ -318,11 +320,11 @@ label day_1:
         xoffset -200
     elowyn "Um. It was a figure of speech, ma’am."
     victoria "And you’re VERY late, you know? Did Elliot lead you astray?"
-    show crumblepuff:
+    show crumblepuff smile at sprite_size_four:
         xalign 1.5
         yalign 1.0
-        yoffset 200
-        xoffset 200
+        yoffset 100
+        xoffset 250
         ease 2.0 xalign 1.0
     show elowyn shocked at sprite_size_four:
         xalign 0.0
@@ -338,6 +340,7 @@ label day_1:
         xalign 1.0
         yalign 1.0
         yoffset 100
+        xoffset -200
     crumblepuff "Oh, you’re such a hoot, Vicky! You told them to be here by six, and six it is!"
     $ elliot_name = "Elliot"
     show elliot shocked at sprite_size_four:
@@ -351,12 +354,22 @@ label day_1:
         yalign 1.0
         yoffset 100
         xoffset 200
+    show crumblepuff pout at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     victoria "Don’t take me for a fool, Elliot! You know Crumblepuff’s clocks have read 6:00 pm since dinosaurs walked the planet! {b}(Crumblepuff’s Clocks added to journal!){/b}"
     show elliot shocked at sprite_size_four:
         xalign 0.0
         yalign 1.0
         yoffset 100
         xoffset 200
+    show crumblepuff happy at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     elliot "Oh, it looks like I left my watch at home. Excuse me while I go get it!"
     show elliot neutral at sprite_size_four:
         xalign 0.0
@@ -392,11 +405,11 @@ label day_1:
         yalign 1.0
         yoffset 100
         xoffset -200
-    show crumblepuff:
+    show crumblepuff happy at sprite_size_four:
         xalign 1.0
         yalign 1.0
-        yoffset 200
-        xoffset 200
+        yoffset 100
+        xoffset 250
         ease 3.0 xalign 0.5
     ###NARATOR
     "The other woman at the table huffs, smoke swirling around the table."
@@ -406,6 +419,11 @@ label day_1:
         yalign 1.0
         yoffset 100
         xoffset 200
+    show crumblepuff pout at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     crumblepuff "Don’t laugh, Paige! We can’t complain about my clocks when they’re the only ones that even work!"
     show paige thinking at sprite_size_four:
         xalign 1.0
@@ -418,6 +436,11 @@ label day_1:
         yalign 1.0
         yoffset 100
         xoffset -200
+    show crumblepuff happy at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     elowyn "Sorry to cut in, but what’s wrong with the clocks?"
 
     ###NARATOR
@@ -452,6 +475,11 @@ label day_1:
         yoffset 100
         xoffset -200
     elowyn "Someone stole your clocks? All of them?"
+    show crumblepuff smile at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     crumblepuff "Wow, you really are a detective! Close, but not quite."
 
     show paige thinking at sprite_size_four:
@@ -485,6 +513,11 @@ label day_1:
         yalign 1.0
         yoffset 100
         xoffset 300
+    show crumblepuff happy at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     elowyn "Ahem." 
     pause 1.0
 
@@ -838,7 +871,17 @@ label confused_option:
         yoffset 100
         xoffset -200
     elowyn "It was a rhetorical question!"
+    show crumblepuff smile at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     crumblepuff "Ah, rhetoric–wordplay, if you will. The pinnacle of art and the cornerstone of creation, the seed that sprouts innovation! Can I share some of my own rhetoric with you all?"
+    show crumblepuff pout at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        xoffset 250
     show paige thinking at sprite_size_four:
         xalign 1.0
         yalign 1.0

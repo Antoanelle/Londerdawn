@@ -155,7 +155,7 @@ label day_3:
         yoffset 100
     elowyn "Who can I ask? Wait, doesn’t Paige volunteer at the shelter with Jasper? Although she’s certainly not the welcoming type…I’ll have to take my chances."
     play sound "audio/bgs/libary_bg.mp3"
-    scene library with fade
+    scene bg library with fade
 
     show paige surprised at sprite_size:
         alpha 0.0
@@ -413,7 +413,7 @@ label day_3:
         linear 3.0 alpha 0.0
     "Elowyn takes off running. She doesn’t stop until she gets to her car, where she slumps down inside."
 
-    scene car with fade
+    scene bg car with fade
     play sound "audio/bgs/office_car_bg.mp3"
     show elowyn thinking at sprite_size:
         xalign 0.5

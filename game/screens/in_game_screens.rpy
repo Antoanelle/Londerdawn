@@ -260,3 +260,16 @@ style quick_button:
 
 style quick_button_text:
     properties gui.text_properties("quick_button")
+
+
+
+##BACKGROUNDS
+image bg office = Transform("images/backgrounds/small_office.png", blur=5)
+image bg car = "images/backgrounds/car_resized.png"
+image bg city hall = "images/backgrounds/city_hall_resized.png"
+image bg library = "images/backgrounds/library_resized.png"
+
+
+##ITEMS
+image newspaper = "images/bad_ending_newspaper.png"
+    

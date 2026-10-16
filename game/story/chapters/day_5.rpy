@@ -8,7 +8,7 @@ label day_5:
 ##CHARACTERS - Elowyn, Victoria, Elliot
 ##BACKGROUNDS - City Hall
     play sound "audio/bgs/office_car_bg.mp3"
-    scene city hall
+    scene bg city hall
     pause 2.0
     show elowyn neutral at sprite_size_four:
         xalign 2.0

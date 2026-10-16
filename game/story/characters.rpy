@@ -12,6 +12,12 @@ define paige = Character(_("Paige"), color="#ffffff")
 define boss = Character(_("Boss"), color="#ffffff")
 
 
+image crumblepuff smile = "images/sprites/crumblepuff_smile.png"
+image crumblepuff happy = "images/sprites/crumblepuff_happy.png"
+image crumblepuff sad = "images/sprites/crumblepuff_sad.png"
+image crumblepuff shocked = "images/sprites/crumblepuff_shocked.png"
+image crumblepuff pout = "images/sprites/crumblepuff_pout.png"
+
 image elowyn neutral = "images/sprites/elowyn_neutral.png"
 image elowyn smile = "images/sprites/elowyn_smile.png"
 image elowyn shocked = "images/sprites/elowyn_shocked.png"

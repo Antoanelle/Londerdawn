@@ -65,7 +65,7 @@ label day_2:
     ##CHARACTERS - Elowyn, Victoria, Elliot
     ##BACKGROUNDS - City Hall
     play music "audio/bgs/office_car_bg.mp3"
-    scene city hall with fade
+    scene bg city hall with fade
     pause 2.0
     show victoria thinking at sprite_size_four:
         alpha 0.0
@@ -153,7 +153,7 @@ label day_2:
     play music "audio/bgs/library_bg.mp3"
 
     ##NARATOR
-    scene library with fade
+    scene bg library with fade
     pause 2.0
     show paige neutral at sprite_size:
         xalign 1.0
@@ -316,12 +316,16 @@ label bakery_scene:
         yalign 1.0
         yoffset 100
         ease 3.0 xalign 1.0
-    show crumblepuff at sprite_size:
+    show crumblepuff happy at sprite_size:
         xalign 0.0
         yalign 1.0
         yoffset 100
     "Elowyn makes her way over and ducks inside, seating herself at a quaint table. The clocks reads 6:00 pm as usual, which is somewhat comforting."
 
+    show crumblepuff smile at sprite_size:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     crumblepuff "Hello Sugar!"
     show elowyn smile at sprite_size:
         xalign 1.0
@@ -333,6 +337,10 @@ label bakery_scene:
     elowyn "And um, also a couple of questions, if you’d allow it?"
     crumblepuff "I don’t see why not. Just doing your job, aren’t you?"
     elowyn "Yep! I appreciate your help. Well, I just wanted to ask about Paige, mainly what she was doing yesterday. Any information would be helpful."
+    show crumblepuff smile at sprite_size:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     crumblepuff "Let me think…Oh, I think I did! She was heading towards the town hall I think, at around six."
     show elowyn shocked at sprite_size:
         xalign 1.0
@@ -344,6 +352,10 @@ label bakery_scene:
         yalign 1.0
         yoffset 100
     elowyn "Wait, seriously? Okay…but um, no offense, could you tell me the actual time? Not what your clocks say."
+    show crumblepuff pout at sprite_size:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     crumblepuff "Rude!!! For your information, I wasn’t even at the bakery! The clock said six on the clock, on my phone, and the tower too."
     show elowyn shocked at sprite_size:
         xalign 1.0
@@ -356,6 +368,10 @@ label bakery_scene:
         yoffset 100
     elowyn "{i}Wait…Didn’t Paige say she got off work at six? If she wasn’t lying about that, then the timings match up!{/i}"
     elowyn "Are you sure?"
+    show crumblepuff happy at sprite_size:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
     crumblepuff "Well, it certainly looked like her. Had her cute stripey suit on, although she was hunched over a little funny."
     show elowyn neutral at sprite_size:
         xalign 1.0

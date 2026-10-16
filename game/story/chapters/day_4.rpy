@@ -34,18 +34,52 @@ label day_4:
 
     ##NARATOR
     scene town with fade
-    play sound "audio/bgs/bakery_fire_bg.mp3"
-    show crumblepuff at sprite_size_four:
+    play sound "audio/bgs/bakery_fire_bg.mp3" loop
+    show crumblepuff shocked at sprite_size_four:
         xalign 0.5
         yalign 1.0
         yoffset 100
-    "Ms. Crumblepuff stands outside, flitting around her burning establishment as she chucks buckets of water at the building futilely."
-
-    show elowyn shocked at sprite_size_four:
-        xalign 0.0
+        ease 1.0 xalign 1.0
+    pause 1.0
+    show crumblepuff shocked at sprite_size_four:
+        xalign 1.0
         yalign 1.0
         yoffset 100
+        ease 1.0 xalign 0.5
+    pause 1.0
+    show crumblepuff shocked at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 1.0
+    pause 1.0
+    show crumblepuff shocked at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 0.5
+    "Ms. Crumblepuff stands outside, flitting around her burning establishment as she chucks buckets of water at the building futilely."
+    show crumblepuff shocked at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 1.0
+    pause 1.0
+    show crumblepuff shocked at sprite_size_four:
+        xalign 1.0
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 0.5
+    show elowyn shocked at sprite_size_four:
+        xalign -0.5
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 0.0
     elowyn "Ms. Crumblepuff? What’s going on? Are you alright?"
+    show crumblepuff sad at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
     crumblepuff "My cakes! My ovens! Heaven’s sake, my clocks!!! I only stepped out for minute, and– and–"
     show elowyn thinking at sprite_size_four:
         xalign 0.0
@@ -66,6 +100,7 @@ label day_4:
         yalign 1.0
         yoffset 100
         ease 3.0 xalign 2.0
+    hide crumblepuff with Dissolve(3.0)
     "After the heat died down enough, Elowyn made her way inside to investigate."
     play sound "audio/bgs/suspenseful_bg.mp3"
     scene bakery with fade
@@ -91,10 +126,11 @@ label day_4:
 
     ##NARATOR
     scene town with fade
-    show crumblepuff at sprite_size_four:
+    show crumblepuff sad at sprite_size_four:
         xalign 0.0
         yalign 1.0
         yoffset 100
+        xoffset -200
     show jasper happy at sprite_size_four:
         xalign 0.5
         yalign 1.0
@@ -133,9 +169,19 @@ label day_4:
         yalign 1.0
         yoffset 100
     paige "There he goes again…you’re not cute enough to get away with that."
+    show crumblepuff pout at sprite_size_four:
+        xalign 0.0
+        yalign 1.0
+        yoffset 100
+        ease 1.0 xalign 0.5 
+    show jasper confused at sprite_size_four:
+        xalign 0.5
+        yalign 1.0
+        yoffset 100
+        ease 2.0 xalign 0.0
     crumblepuff "Oh, don’t fight! First my bakery, now your friendship?"
     show jasper pleased at sprite_size_four:
-        xalign 0.5
+        xalign 0.0
         yalign 1.0
         yoffset 100
     "Paige & Jasper" "Shut up."
@@ -147,7 +193,7 @@ label day_4:
 
     ##NARATOR
     show jasper pleased at sprite_size_four:
-        xalign 0.5
+        xalign 0.0
         yalign 1.0
         yoffset 100
         linear 1.0 alpha 0.0
@@ -156,8 +202,8 @@ label day_4:
         yalign 1.0
         yoffset 100
         linear 1.0 alpha 0.0
-    show crumblepuff at sprite_size_four:
-        xalign 0.0
+    show crumblepuff sad at sprite_size_four:
+        xalign 0.5
         yalign 1.0
         yoffset 100
         linear 1.0 alpha 0.0
@@ -196,7 +242,7 @@ label day_4:
         xalign 0.0
         yalign 1.0
         yoffset 100
-    pause 0.2
+    pause 0.1
     show elliot neutral at sprite_size_four:
         xalign 0.0
         yalign 1.0
@@ -218,7 +264,7 @@ label day_4:
 
     ##NARATOR
     play sound "audio/bgs/office_car_bg.mp3"
-    scene car with fade
+    scene bg car with fade
     show elowyn thinking at sprite_size:
         xalign 0.5
         yalign 1.0

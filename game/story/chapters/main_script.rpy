@@ -9,7 +9,7 @@ label start:
     ##BACKGROUNDS - Small office
     play music "audio/bgs/office_car_bg.mp3"
 
-    scene small_desk with Dissolve(1.5)
+    scene bg office with Dissolve(1.5)
     show elowyn neutral at sprite_size:
         xalign 0.0
         yalign 1.0
@@ -88,7 +88,8 @@ label start:
         yalign 1.0
         yoffset 100
     elowyn "{i}What am I getting myself into…{/i}"
-    hide elowyn analyzing
+    hide elowyn with Dissolve(2.0)
+    pause 2.0
     jump day_1
 
 
