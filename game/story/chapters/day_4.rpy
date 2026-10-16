@@ -9,9 +9,10 @@ label day_4:
     ##SCENE ONE
     ##CHARACTERS - Elowyn, Ms. Crumblepuff, Paige, Jasper, Elliot
     ##BACKGROUNDS - Sleeping Quarters, Bakery
+    scene bg day 4 with Dissolve(2.0)
 
     ##NARATOR
-    scene sleeping quarters with fade
+    scene bg sleeping quarters with fade
     pause 2.0
     play sound "audio/sfx/smoke_sfx.mp3" loop
     show elowyn analyzing at sprite_size_four:
@@ -34,7 +35,7 @@ label day_4:
     elowyn "The bakery!?!? That’s the one good place here!!!"
 
     ##NARATOR
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     play sound "audio/bgs/bakery_fire_bg.mp3" loop
     show crumblepuff shocked at sprite_size_four:
         xalign 0.5
@@ -126,7 +127,7 @@ label day_4:
     elowyn "Hang on. This looks like it belongs to…well, the mayor." 
 
     ##NARATOR
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     show crumblepuff sad at sprite_size_four:
         xalign 0.0
         yalign 1.0

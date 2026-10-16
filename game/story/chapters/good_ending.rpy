@@ -1,6 +1,6 @@
 label good_ending:
     play sound "audio/bgs/office_car_bg.mp3"
-    scene bg office_blurred with fade
+    scene bg office with fade
 
     show elowyn smile at sprite_size:
         xalign 0.5

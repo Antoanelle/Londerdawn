@@ -272,6 +272,13 @@ image bg forest = "images/backgrounds/forest.png"
 image bg bakery = "images/backgrounds/bakery.png"
 image bg bakery second = "images/backgrounds/bakery_second.png"
 image bg bakery burnt = "images/backgrounds/bakery_burnt.png"
+image bg day 1 = "images/backgrounds/day_1.png"
+image bg day 2 = "images/backgrounds/day_2.png"
+image bg day 3 = "images/backgrounds/day_3.png"
+image bg day 4 = "images/backgrounds/day_4.png"
+image bg day 5 = "images/backgrounds/day_1.png"
+image bg sleeping quarters = "images/backgrounds/sleeping_quarters.png"
+image bg town = "images/backgrounds/town.png"
 
 
 ##ITEMS

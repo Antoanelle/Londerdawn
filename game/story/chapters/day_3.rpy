@@ -4,9 +4,10 @@ label day_3:
     ##CHARACTERS - Elowyn, Jasper
     ##BACKGROUNDS - Town, Forest
 
+    scene bg day 3 with Dissolve(2.0)
     ##NARATOR
     play sound "audio/bgs/main_menu_town_bg.mp3"
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     pause 2.0
     show elowyn neutral at sprite_size:
         xalign 0.5
@@ -147,7 +148,7 @@ label day_3:
 
     ##NARATOR
     play sound "audio/bgs/main_menu_town_bg.mp3"
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     pause 2.0
     show elowyn analyzing at sprite_size:
         xalign 0.5
@@ -277,7 +278,7 @@ label day_3:
     ##CHARACTERS - Elowyn, Paige, Jasper
     ##BACKGROUNDS - Town, Forest
     play sound "audio/bgs/main_menu_town_bg.mp3"
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     pause 2.0
 
     show elowyn analyzing at sprite_size_four:

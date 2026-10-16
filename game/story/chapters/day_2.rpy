@@ -9,8 +9,10 @@ label day_2:
     ##CHARACTERS - Elowyn, Elliot
     ##BACKGROUNDS - Sleeping quarters
 
+    scene bg day 2 with Dissolve(2.0)
+    pause 2.0
     ##NARATOR 
-    scene sleeping quarters
+    scene bg sleeping quarters with Dissolve(2.0)
     play music "audio/bgs/morning_bg.mp3"
     play sound "audio/sfx/door_knock_sfx.mp3" loop
     pause 2.0
@@ -226,7 +228,7 @@ label day_2:
     pause 2.0
     ##NARATOR
     play music "audio/bgs/main_menu_town_bg.mp3"
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     show elowyn neutral at sprite_size:
         xalign 1.5
         yalign 1.0
@@ -258,7 +260,7 @@ label day_2:
                 $ car_picked = True
     window auto
     
-    scene town with fade 
+    scene bg town with Dissolve(2.0) 
     pause 2.0
     show elowyn analyzing at sprite_size:
         xalign 0.5

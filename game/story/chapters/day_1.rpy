@@ -4,6 +4,8 @@ label day_1:
     ##CHARACTERS - Elowyn, Elliot
     ##BACKGROUNDS - Car, Forest
 
+    scene bg day 1 with Dissolve(2.0)
+    pause 2.0
     ##NARATOR
     play music "audio/bgs/office_car_bg.mp3" 
     scene bg car with Dissolve(2.0)
@@ -223,7 +225,7 @@ label day_1:
     ##CHARACTERS - Elowyn, Elliot, Victoria, Ms. Crumblepuff, Paige
     ##BACKGROUNDS - Bakery
     play music "audio/bgs/main_menu_town_bg.mp3"
-    scene town with Dissolve(2.0)
+    scene bg town with Dissolve(2.0)
     ###NARATOR
     show elliot happy at sprite_size_four:
         xalign -0.5
@@ -544,7 +546,7 @@ label day_1:
         ease 3.0 xalign -1.0
     pause 2.0
 
-    scene town with fade
+    scene bg town with Dissolve(2.0)
     play music "audio/bgs/main_menu_town_bg.mp3"
     show victoria neutral at sprite_size:
         xalign 1.5
@@ -615,7 +617,7 @@ label day_1:
     hide victoria
     hide elowyn
 
-    scene town with fade
+    scene bg town with dissolve(2.0)
     show elliot neutral at sprite_size:
         xalign 0.0
         yalign 1.0
