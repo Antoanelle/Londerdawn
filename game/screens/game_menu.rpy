@@ -71,8 +71,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0, title_image=None, 
         xalign 0.0
         ypos 850
         xoffset 0
-        idle im.Scale("images/return_idle.png", 400, 300)
-        hover im.Scale("images/return_hover.png", 400, 300)
+        idle im.Scale("images/screen_titles/return_idle.png", 400, 300)
+        hover im.Scale("images/screen_titles/return_hover.png", 400, 300)
         action Return()
 
     if title_image:

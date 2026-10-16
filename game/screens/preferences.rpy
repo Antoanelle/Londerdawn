@@ -9,9 +9,10 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences"), scroll="viewport", title_image="images/screen_titles/preferences_title.png"):
 
         vbox:
+            yoffset 100
 
             hbox:
                 box_wrap True

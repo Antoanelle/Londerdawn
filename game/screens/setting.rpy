@@ -10,7 +10,7 @@ screen settings():
 
     default device = "keyboard"
 
-    use game_menu(_("Settings"), scroll="viewport", title_image="settings_title.png", show_navigation=False):
+    use game_menu(_("Settings"), scroll="viewport", title_image="images/screen_titles/settings_title.png", show_navigation=False):
 
         style_prefix "settings"
 

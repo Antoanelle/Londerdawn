@@ -9,7 +9,7 @@ screen about():
 
     tag menu
 
-    use game_menu(_("About"), scroll="viewport", title_image="images/about_title.png"):
+    use game_menu(_("About"), scroll="viewport", title_image="images/screen_titles/about_title.png"):
 
         style_prefix "about"
 

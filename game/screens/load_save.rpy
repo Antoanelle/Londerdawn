@@ -25,7 +25,7 @@ screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
-    use game_menu(title):
+    use game_menu(title, title_image="images/screen_titles/save_title.png"):
 
         fixed:
 
