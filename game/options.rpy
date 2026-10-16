@@ -30,7 +30,7 @@ define gui.show_name = True
 
 define gui.about = _p("""
 
-Antoanelle Darko - Main Programmer
+Antoanelle Darko - Programmer
 
 Mridhini Udhayakumar - Character Artist
 
