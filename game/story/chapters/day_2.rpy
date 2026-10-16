@@ -23,7 +23,7 @@ label day_2:
         xalign 1.0
         yalign 1.0
         yoffset 100
-    play sound "audio/sfx/door_knock_sfx"
+    play sound "audio/sfx/door_knock_sfx.mp3"
     "There is a loud banging on the door of Elowyns sleeping quarters. She jumps awake and scrambles to collect herself before answering. Elliot's figure appears as the door creaks open"
 
     show elliot neutral at sprite_size:
@@ -204,7 +204,7 @@ label day_2:
     elowyn "Um. Right. Well, when would you be–"
 
     ##NARATOR
-    play sound "audio/sfx/smoke_sfx.mp3"
+    play sound "audio/sfx/smoke_sfx.mp3" loop
     show elowyn shocked at sprite_size:
         xalign 0.0
         yalign 1.0

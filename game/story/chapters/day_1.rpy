@@ -120,7 +120,7 @@ label day_1:
     ##BACKGROUND - Forest
 
     ###NARATOR
-    scene bg forest with Dissole(2.0)
+    scene bg forest with Dissolve(2.0)
     "It seems like out of nowhere, the town’s entrance materializes right before their eyes amidst the fog."
 
     play sound "audio/sfx/leaves_moving_sfx.mp3" loop
@@ -223,7 +223,7 @@ label day_1:
     ##CHARACTERS - Elowyn, Elliot, Victoria, Ms. Crumblepuff, Paige
     ##BACKGROUNDS - Bakery
     play music "audio/bgs/main_menu_town_bg.mp3"
-
+    scene town with Dissolve(2.0)
     ###NARATOR
     show elliot happy at sprite_size_four:
         xalign -0.5
@@ -238,8 +238,8 @@ label day_1:
         xalign -0.5
         yalign 1.0
         yoffset 100
-        ease 3.0 xalign 0.0
-        pause 1.0
+        ease 1.0 xalign 0.0
+        pause 0.5
         ease 3.0 xalign 2.0
     elowyn "{i}A bakery? The smell is making my tummy rumble. Hang in there, bud!{/i}"
     show elliot happy at sprite_size_four:
@@ -310,7 +310,7 @@ label day_1:
     show victoria angry at sprite_size_four:
         xalign 1.0
         yalign 1.0
-        yoffset 50
+        yoffset 100
         xoffset -200
     victoria "Guilty, you say! I thought your job was to catch criminals, not be one!"
     show elowyn shocked at sprite_size_four:

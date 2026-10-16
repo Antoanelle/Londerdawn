@@ -20,6 +20,7 @@ label day_3:
         yalign 1.0
         yoffset 100
     elowyn "I’m thinking a muffin today. Chocolate or blueberry, though?"
+    play sound "audio/sfx/cats_sfx.mp3" loop
     "???" "Meow!"
     show elowyn thinking at sprite_size:
         xalign 0.5
@@ -67,6 +68,7 @@ label day_3:
     elowyn "…I suppose I should handle this before the mayor finds out. I have an idea of who might know something about this anyway."
 
     ##NARATOR
+    stop sound
     "With this in mind, Elowyn turns the opposite way and makes her way over to Jasper’s place on the outskirts of town. A quaint place, with its door currently scratched up."
     show elowyn neutral at sprite_size:
         xalign 0.5
@@ -158,7 +160,7 @@ label day_3:
         yalign 1.0
         yoffset 100
     elowyn "Who can I ask? Wait, doesn’t Paige volunteer at the shelter with Jasper? Although she’s certainly not the welcoming type…I’ll have to take my chances."
-    play sound "audio/bgs/libary_bg.mp3"
+    play sound "audio/bgs/library_bg.mp3"
     scene bg library with fade
 
     show paige surprised at sprite_size:
@@ -301,6 +303,7 @@ label day_3:
         yalign 1.0
         yoffset 100
         ease 3.0 xalign 0.5
+    play sound "audio/sfx/leaves_moving_sfx.mp3"
     "With a promising new lead, Elowyn made her way back to Jasper’s house, only to find Paige already there, currently in a spat with the hooligan himself."
 
     show elowyn thinking at sprite_size_four:
@@ -379,7 +382,7 @@ label day_3:
         yoffset 100
     elowyn "{i}So Jasper left the shelter this morning. That explains why no alarms were set off. Say he let the cats out via the emergency door…why wouldn’t he try and leave?"
     elowyn "{i}Anyone with half a brain cell would think to accuse him first. Something isn’t adding up.{/i}"
-
+    
     ##NARATOR
     show elowyn shocked at sprite_size_four:
         xalign -0.4

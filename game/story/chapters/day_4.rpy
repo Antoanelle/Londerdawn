@@ -13,6 +13,7 @@ label day_4:
     ##NARATOR
     scene sleeping quarters with fade
     pause 2.0
+    play sound "audio/sfx/smoke_sfx.mp3" loop
     show elowyn analyzing at sprite_size_four:
         xalign 1.0
         yalign 1.0
