@@ -45,8 +45,6 @@ image victoria neutral = "images/sprites/victoria_neutral.png"
 image victoria surprised = "images/sprites/victoria_surprised.png"
 image victoria thinking = "images/sprites/victoria_thinking.png"
 
-#Missing crumblepuff
-
 transform sprite_size:
     zoom 0.60
 

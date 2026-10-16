@@ -26,9 +26,9 @@ screen say(who, what):
             Image("images/dialogue/textbox_light_blue.png", xalign=0.5, ypos=0) if who == "Elowyn"
             else Image("images/dialogue/textbox_light_yellow.png", xalign=0.5, ypos=0) if who in("Elliot", "???") 
             else Image("images/dialogue/textbox_light_red.png", xalign=0.5, ypos=0) if who == "Ms. Valentine"
-            else Image("images/dialogue/textbox_light_green.png", xalign=0.5, ypos=0) if who in("Jasper", "????")
+            else Image("images/dialogue/textbox_light_purple.png", xalign=0.5, ypos=0) if who in("Jasper", "????")
             else Image("images/dialogue/textbox_light_orange.png", xalign=0.5, ypos=0) if who == "Ms. Crumblepuff"
-            else Image("images/dialogue/textbox_light_purple.png", xalign=0.5, ypos=0) if who == "Paige"
+            else Image("images/dialogue/textbox_light_green.png", xalign=0.5, ypos=0) if who == "Paige"
             else Image("images/dialogue/textbox_light_blue.png", xalign=0.5, ypos=0)
             ) 
             
@@ -41,9 +41,9 @@ screen say(who, what):
                     Frame("images/dialogue/namebox_blue.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Elowyn"
                     else Frame("images/dialogue/namebox_yellow.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who in("Elliot", "???") 
                     else Frame("images/dialogue/namebox_red.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Ms. Valentine"
-                    else Frame("images/dialogue/namebox_green.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who in("Jasper", "????")
+                    else Frame("images/dialogue/namebox_purple.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who in("Jasper", "????")
                     else Frame("images/dialogue/namebox_orange.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Ms. Crumblepuff"
-                    else Frame("images/dialogue/namebox_purple.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Paige"
+                    else Frame("images/dialogue/namebox_green.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign) if who == "Paige"
                     else Frame("images/dialogue/namebox_blue.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
                 )  
                 text who id "who"
