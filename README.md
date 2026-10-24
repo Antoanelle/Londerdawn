@@ -1,13 +1,15 @@
 # Londerdawn
-A visual novel made with ren'py and uploaded on [itch.io](https://anielliea.itch.io/londerdawn)\
-Developed during the UNC Charlotte Game Developers Fall 2026 Month Long Game Jam\
+![Screenshot of the starting screen of Londerdawn](Londerdawn_start_screen.png)
+<hr>
+A visual novel made with ren'py and uploaded on [itch.io](https://anielliea.itch.io/londerdawn)<br>
+Developed during the UNC Charlotte Game Developers Fall 2026 Month Long Game Jam<br>
 Game Jam Theme: Out of Control
 
 ## Features
 A Wonderland themed visual novel where as Elowyn (Alice) you investigate the shenanigans happening around town
 - Detailed sprites and melodious music
-- Interaction through choices
-- And a fun story
+- Interactions through choices
+- Plus a fun story
 
 
 ## Contributors
